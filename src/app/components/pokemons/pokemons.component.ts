@@ -25,7 +25,6 @@ getPokemonList() {
   return  this.pokemonsService
     .getAllPokemons()
     .subscribe((pokemons) => {
-      console.log(pokemons);
       this.pokemons = pokemons.results;
     });
   }

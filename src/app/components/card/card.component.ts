@@ -17,7 +17,7 @@ export class CardComponent implements OnInit {
   constructor(private sharedService: SharedService) {}
 
   ngOnInit(): void {
-    console.log("Pokemon: " + JSON.stringify(this.pokeInput));
+    
   }
 
   getPokemonId(url: string): string {
