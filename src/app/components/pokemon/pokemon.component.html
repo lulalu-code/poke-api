@@ -1,0 +1,17 @@
+<div class="container mt-5">
+
+    <div *ngIf="pokemon" class="row animate__animated animate__bounce animate__fadeIn bg-warning w-25 border border-warning rounded">
+        <div class="col.md-9">
+            <p><strong>Identifier: </strong>{{pokemon.id}}</p>
+            <p><strong>Name: </strong>{{toCamelCase(pokemon.name)}}</p>
+            <p><strong>Base experience: </strong>{{pokemon.base_experience}}</p>
+            <p><strong>Height: </strong>{{pokemon.height}}</p>
+            <p><strong>Order: </strong>{{pokemon.order}}</p>
+            <p><strong>Weight: </strong>{{pokemon.weight}}</p>
+            <img style="width: 200px; height: 200px;" src="{{pokemon.sprites.front_default}}" alt="{{ 'Image of ' + pokemon.name}}">
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-info text-white" routerLink="/">Back</a>
+        </div>
+    </div>
+</div>
